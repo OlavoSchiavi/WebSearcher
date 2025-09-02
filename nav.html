@@ -6,25 +6,41 @@
 </head>
 
 <body>
-    <div id="tabsHolder">
-        <div class="tab">
-            <p>title</p>
-            <button><img src="assets/icons/close.svg"></button>
+    <div class="upperNav">
+        <div id="tabsHolder">
+            <div class="tab">
+                <p>title</p>
+                <div class="divisor"></div>
+                <button id="closeTab"><img src="assets/icons/close.svg"></button>
+            </div>
+        </div>
+        <button><img src="assets/icons/add.svg"></button>
+        <div class="windowControler">
+            <div></div>
+            <button id="minimizar"><img src="assets/icons/minimize.svg"></button>
+            <button id="maximixar"><img src="assets/icons/maximize.svg"></button>
+            <button id="fechar"><img src="assets/icons/close.svg"></button>
         </div>
     </div>
+
     <nav>
         <div>
             <button id="anterior"><img src="assets/icons/arrow_back.svg"></button>
+            <div class="divisor"></div>
             <button id="proximo"><img src="assets/icons/arrow_forward.svg"></button>
+            <div class="divisor"></div>
             <button id="recarregar"><img src="assets/icons/refresh.svg"></button>
         </div>
-        <div>
+        <div class="divisor"></div>
+        <div class="navBar">
             <input type="text" id="barraDePesquisa">
-            <div></div>
+            <div class="divisor"></div>
             <button id="pesquisar"><img src="assets/icons/search.svg"></button>
         </div>
+        <div class="divisor"></div>
         <div>
             <button id="favoritos"><img src="assets/icons/star.svg"></button>
+            <div class="divisor"></div>
             <button id="conta"><img src="assets/icons/account.svg"></button>
         </div>
     </nav>

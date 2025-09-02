@@ -1,9 +1,90 @@
+:root{
+    --padding: 5px;
+    --borderRadius: 5px;
+    --mainColor: white;
+    --secondColor: black;
+    --border: 1px solid var(--mainColor);
+    --btnSize: 30px;
+    --btnImgSize: 15px;
+    --font: arial;
+}
+.divisor{
+    width: var(--padding);
+}
 nav{
     display: flex;
+    padding: var(--padding);
 }
 nav div{
     display: flex;
 }
-nav button{
-    border: 1px solid black;
+.tabsHolder{
+    display: flex;
+    overflow-x: scroll;
+    
+}
+.tab{
+    display: flex;
+    padding: var(--padding);
+    width: 100px;
+    align-items: center;
+    margin-right: var(--padding);
+    border-radius: var(--borderRadius) var(--borderRadius) 0 0;
+    border: var(--border);
+    border-bottom: 0;
+    box-shadow: 0 1px 0 0px var(--secondColor);
+    color: var(--mainColor);
+}
+.tab p{
+    width: 100%;
+}
+.upperNav{
+    display: flex;
+    padding: var(--padding);
+    padding-bottom: 0;
+    border-bottom: 1px inset var(--mainColor);
+    align-items: center;
+}
+
+html button{
+    padding: var(--padding);
+    border-radius: var(--borderRadius);
+    border: var(--border);
+    outline: none;
+    min-width: var(--btnSize);
+    min-height: var(--btnSize);
+    max-width: var(--btnSize);
+    max-height: var(--btnSize);
+    background-color: transparent;
+}
+html button img{
+    height: var(--btnImgSize);
+    width: var(--btnImgSize);
+}
+.navBar{
+    border: var(--border);
+    width: 100%;
+    border-radius: var(--borderRadius);
+}
+.navBar input, .navBar button{
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+.navBar input{
+    width: 100%;
+    color: var(--mainColor);
+    padding: var(--padding);
+}
+html{
+    background-color: var(--secondColor);
+    font-family: var(--font);
+}
+.windowControler{
+    width: 100%;
+    display: flex;
+    min-width: fit-content;
+}
+.windowControler div{
+    width: 100%;    
 }
