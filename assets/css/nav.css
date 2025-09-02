@@ -1,0 +1,9 @@
+nav{
+    display: flex;
+}
+nav div{
+    display: flex;
+}
+nav button{
+    border: 1px solid black;
+}
